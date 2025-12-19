@@ -1,10 +1,92 @@
-*{
-    margin: 0;
-    padding: 0;
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.header{
-    text-align: center;
-    background-color: burlywood;
-    padding: 20px;
+/* Body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: bisque;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  background-color: burlywood;
+  padding: 20px;
+}
+
+.header-text {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Sección nuevo libro */
+.newbook-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.button-text {
+  margin-bottom: 10px;
+}
+
+/* Botón */
+#new-book-btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: rgb(37, 157, 243);
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+#new-book-btn:hover {
+  background-color: blue;
+}
+
+/* Formulario */
+#book-form {
+  background-color: white;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  flex-direction: column;
+  gap: 10px;
+  width: 250px;
+}
+
+#book-form input {
+  padding: 6px;
+}
+
+#book-form button {
+  background-color: burlywood;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+/* Librería */
+#library {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* Tarjetas */
+.card {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.card button {
+  margin-right: 5px;
 }

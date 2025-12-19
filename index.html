@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>library Villrabide</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Villarabide</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-        <h1 class="title">Villrabide library</h1>
-        <p class="header text">Esto simplemente es una prueba para crear una funcion de añadir 
-            libros usando objetos en javascript usando objetos
-        </p>
 
-    </header>
-    <div class="newbook-container">
-        <p class="button-text">Haga click en el siguiente boton para añadir un nuevo libro</p>
-        <button id="new-book-btn">Nuevo libro</button>
+  <header class="header">
+    <h1 class="title">Villarabide Library</h1>
+    <p class="header-text">
+      Esto es una prueba para crear una función de añadir libros usando
+      objetos en JavaScript
+    </p>
+  </header>
+
+<div class="newbook-container">
+    <p class="button-text">
+      Haga click en el siguiente botón para añadir un nuevo libro
+    </p>
+
+    <button id="new-book-btn" type="button">Nuevo libro</button>
 
         <form id="book-form" hidden>
             <input type="text" id="title" placeholder="title" required>
@@ -27,12 +32,13 @@
                 <input type="checkbox" id="read">
                 Read
             </label>
-            <button type="submit">Añade Nuveo Libro</button>
+
+            <button type="submit">Añade Nuevo Libro</button>
         </form>
-    </div>
+</div>
 
-    <div id="library"></div>
+  <div id="library"></div>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
