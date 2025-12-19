@@ -3,41 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Library Villarabide</title>
+  <title>Villarabide Library</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- ===== HEADER ===== -->
   <header class="header">
     <h1 class="title">Villarabide Library</h1>
     <p class="header-text">
-      Esto es una prueba para crear una función de añadir libros usando
-      objetos en JavaScript
+      Esto es una prueba para crear una librería usando objetos en JavaScript
     </p>
   </header>
 
-<div class="newbook-container">
+  <!-- ===== NUEVO LIBRO ===== -->
+  <section class="newbook-container">
     <p class="button-text">
-      Haga click en el siguiente botón para añadir un nuevo libro
+      Haz click en el botón para añadir un nuevo libro
     </p>
 
-    <button id="new-book-btn" type="button">Nuevo libro</button>
+    <button id="new-book-btn" type="button">
+      Nuevo libro
+    </button>
 
-        <form id="book-form" hidden>
-            <input type="text" id="title" placeholder="title" required>
-            <input type="text" id="author" placeholder="author" required>
-            <input type="number" id="pages" placeholder="pages" required>
+    <!-- FORMULARIO (OCULTO AL INICIO) -->
+    <form id="book-form" class="hidden">
+      <input type="text" id="title" placeholder="Título" required>
+      <input type="text" id="author" placeholder="Autor" required>
+      <input type="number" id="pages" placeholder="Páginas" required>
 
-            <label>
-                <input type="checkbox" id="read">
-                Read
-            </label>
+      <label class="checkbox">
+        <input type="checkbox" id="read">
+        Leído
+      </label>
 
-            <button type="submit">Añade Nuevo Libro</button>
-        </form>
-</div>
+      <button type="submit">
+        Añadir libro
+      </button>
+    </form>
+  </section>
 
-  <div id="library"></div>
+  <!-- ===== LIBRERÍA ===== -->
+  <main id="library"></main>
 
   <script src="script.js"></script>
 </body>

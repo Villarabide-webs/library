@@ -1,17 +1,22 @@
-/* Reset básico */
+/* ===== RESET ===== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body */
+/* ===== CLASE UTIL (CORREGIDA) ===== */
+#book-form.hidden {
+  display: none;
+}
+
+/* ===== BODY ===== */
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: bisque;
 }
 
-/* Header */
+/* ===== HEADER ===== */
 .header {
   text-align: center;
   background-color: burlywood;
@@ -23,55 +28,81 @@ body {
   font-size: 14px;
 }
 
-/* Sección nuevo libro */
+/* ===== SECCIÓN NUEVO LIBRO ===== */
 .newbook-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 30px 0;
+  gap: 10px;
 }
 
 .button-text {
-  margin-bottom: 10px;
+  font-size: 14px;
 }
 
-/* Botón */
+/* ===== BOTÓN ===== */
 #new-book-btn {
   padding: 8px 16px;
   border-radius: 8px;
-  background-color: rgb(37, 157, 243);
+  background-color:brown;
   font-size: 14px;
   border: none;
   cursor: pointer;
+  color: white;
 }
 
 #new-book-btn:hover {
-  background-color: blue;
+  background-color: rgb(159, 65, 65);
 }
 
-/* Formulario */
+/* ===== FORMULARIO ===== */
 #book-form {
   background-color: white;
-  margin-top: 20px;
+  margin-top: 15px;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 10px;
+
+  display: flex;
   flex-direction: column;
-  gap: 10px;
-  width: 250px;
+  gap: 12px;
+
+  width: 280px;
 }
 
-#book-form input {
-  padding: 6px;
-}
-
-#book-form button {
-  background-color: burlywood;
-  border: none;
+/* Inputs */
+#book-form input[type="text"],
+#book-form input[type="number"] {
   padding: 8px;
-  cursor: pointer;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
 }
 
-/* Librería */
+/* Checkbox */
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+/* Botón formulario */
+#book-form button {
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  background-color: burlywood;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#book-form button:hover {
+  background-color: peru;
+}
+
+/* ===== LIBRERÍA ===== */
 #library {
   padding: 20px;
   display: grid;
@@ -79,14 +110,22 @@ body {
   gap: 20px;
 }
 
-/* Tarjetas */
+/* ===== TARJETAS ===== */
 .card {
   background-color: white;
   border: 1px solid #ccc;
   padding: 15px;
-  border-radius: 6px;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .card button {
-  margin-right: 5px;
+  margin-top: 5px;
+  padding: 5px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
 }
